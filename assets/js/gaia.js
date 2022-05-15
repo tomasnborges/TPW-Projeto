@@ -45,11 +45,6 @@ $(document).ready(function(){
 
     burger_menu = $('.navbar').hasClass('navbar-burger') ? true : false;
 
-    if (!Modernizr.touch){
-        $('body').addClass('no-touch');
-        no_touch_screen = true;
-    }
-
     // Init navigation toggle for small screens
     if(window_width < 992 || burger_menu){
         gaia.initRightMenu();
