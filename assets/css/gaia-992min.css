@@ -1,0 +1,28 @@
+.section-we-made-1 .row {
+    margin: 0
+}
+
+.section-we-made-1 .row [class^=col-] {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.section-we-made-2 .scroll-area {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto
+}
+
+.section-we-made-2 .projects {
+    width: 100%;
+    display: block;
+    margin: 0;
+    overflow: hidden
+}
+
+.section-we-made-2 .projects .row {
+    width: 2500px;
+    margin: 0;
+    position: relative
+}

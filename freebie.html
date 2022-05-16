@@ -25,14 +25,17 @@
     <link rel="icon" type="image/webp" sizes="96x96" href="assets/img/favicon.webp">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Gaia - Bootstrap Template | Free Demo</title>
+    <title>Depois</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/gaia.css" rel="stylesheet" />
 
-    <!--     Fonts and icons     -->
-    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600&display=swap' rel='stylesheet'
-        type='text/css'>
+
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        as="script">
+    <link rel="preload" href="assets/js/gaia.js" as="script">
+
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
 </head>
 
@@ -60,45 +63,89 @@
                             PRO Version</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button">
                             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
-                                style="vertical-align: -0.505em;width: 20px;" 
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                                style="vertical-align: -0.505em;width: 20px;" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 1024 1024">
                                 <path fill="currentColor"
                                     d="M752 664c-28.5 0-54.8 10-75.4 26.7L469.4 540.8a160.68 160.68 0 0 0 0-57.6l207.2-149.9C697.2 350 723.5 360 752 360c66.2 0 120-53.8 120-120s-53.8-120-120-120s-120 53.8-120 120c0 11.6 1.6 22.7 4.7 33.3L439.9 415.8C410.7 377.1 364.3 352 312 352c-88.4 0-160 71.6-160 160s71.6 160 160 160c52.3 0 98.7-25.1 127.9-63.8l196.8 142.5c-3.1 10.6-4.7 21.8-4.7 33.3c0 66.2 53.8 120 120 120s120-53.8 120-120s-53.8-120-120-120zm0-476c28.7 0 52 23.3 52 52s-23.3 52-52 52s-52-23.3-52-52s23.3-52 52-52zM312 600c-48.5 0-88-39.5-88-88s39.5-88 88-88s88 39.5 88 88s-39.5 88-88 88zm440 236c-28.7 0-52-23.3-52-52s23.3-52 52-52s52 23.3 52 52s-23.3 52-52 52z" />
                             </svg> Share
+                            <div id="shape" style="display:none;">
+                                
+                                <div>
+                                    <ul class="dropdown-custom">
+                                        <li>
+                                            <a class="dropdown-item1" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    style="vertical-align: -0.055em;width: 10px;"
+                                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 1000">
+                                                    <path fill="currentColor"
+                                                        d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z" />
+                                                </svg>
+                                                FACEBOOK</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item1" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    style="vertical-align: -0.125em;width: 12px;"
+                                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                                                    <path fill="currentColor"
+                                                        d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94a336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6c0 13.2 1.6 26.4 4.2 39.1c-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9c-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850C671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2c33.2-24.3 62.3-54.4 85.5-88.2z" />
+                                                </svg> TWITTER</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a class="dropdown-item1" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    aria-hidden="true" role="img"
+                                                    style="vertical-align: -0.125em;width: 12px;"
+                                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                                    <path fill="currentColor" fill-rule="evenodd"
+                                                        d="M7.465 1.066C8.638 1.012 9.012 1 12 1c2.988 0 3.362.013 4.534.066c1.172.053 1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12c0 2.988-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.396 5.396 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066c-2.988 0-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.397 5.397 0 0 1-1.949-1.268a5.392 5.392 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12c0-2.988.013-3.362.066-4.534c.053-1.172.24-1.972.511-2.672a5.396 5.396 0 0 1 1.27-1.948a5.392 5.392 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511Zm8.98 1.98c-1.16-.053-1.508-.064-4.445-.064c-2.937 0-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.412 3.412 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445c0 2.937.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064c2.938 0 3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445c0-2.937-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.413 3.413 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379Zm-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986ZM8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996Zm10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89Z"
+                                                        clip-rule="evenodd" />
+                                                </svg> INSTAGRAM</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="arrow-up">
+                                    <div></div>
+                                </div>
+                                
+                            </div>
+                            <ul class="dropdown-custom-767" display="none">
+                                <li>
+                                    <a class="dropdown-item1" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            style="vertical-align: -0.055em;width: 10px;"
+                                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 1000">
+                                            <path fill="currentColor"
+                                                d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z" />
+                                        </svg>
+                                        FACEBOOK</a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a class="dropdown-item1" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                            style="vertical-align: -0.125em;width: 12px;"
+                                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                                            <path fill="currentColor"
+                                                d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94a336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6c0 13.2 1.6 26.4 4.2 39.1c-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9c-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850C671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2c33.2-24.3 62.3-54.4 85.5-88.2z" />
+                                        </svg> TWITTER</a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a class="dropdown-item1" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" role="img"
+                                            style="vertical-align: -0.125em;width: 12px;"
+                                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                                d="M7.465 1.066C8.638 1.012 9.012 1 12 1c2.988 0 3.362.013 4.534.066c1.172.053 1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12c0 2.988-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.396 5.396 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066c-2.988 0-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.397 5.397 0 0 1-1.949-1.268a5.392 5.392 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12c0-2.988.013-3.362.066-4.534c.053-1.172.24-1.972.511-2.672a5.396 5.396 0 0 1 1.27-1.948a5.392 5.392 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511Zm8.98 1.98c-1.16-.053-1.508-.064-4.445-.064c-2.937 0-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.412 3.412 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445c0 2.937.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064c2.938 0 3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445c0-2.937-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.413 3.413 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379Zm-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986ZM8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996Zm10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89Z"
+                                                clip-rule="evenodd" />
+                                        </svg> INSTAGRAM</a>
+                                </li>
+                            </ul>
                         </a>
-                        <ul class="dropdown-menu dropdown-danger">
-                            <li>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                        style="vertical-align: -0.125em;" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 1000 1000">
-                                        <path fill="currentColor"
-                                            d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z" />
-                                    </svg>
-                                    Facebook</a>
-                            </li>
-                            <li>
-                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;"
-                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 1024 1024">
-                                        <path fill="currentColor"
-                                            d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94a336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6c0 13.2 1.6 26.4 4.2 39.1c-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9c-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850C671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2c33.2-24.3 62.3-54.4 85.5-88.2z" />
-                                    </svg> Twitter</a>
-                            </li>
-                            <li>
-                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
-                                        style="vertical-align: -0.125em;" width="1em" height="1em"
-                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                        <path fill="currentColor" fill-rule="evenodd"
-                                            d="M7.465 1.066C8.638 1.012 9.012 1 12 1c2.988 0 3.362.013 4.534.066c1.172.053 1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12c0 2.988-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.396 5.396 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066c-2.988 0-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.397 5.397 0 0 1-1.949-1.268a5.392 5.392 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12c0-2.988.013-3.362.066-4.534c.053-1.172.24-1.972.511-2.672a5.396 5.396 0 0 1 1.27-1.948a5.392 5.392 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511Zm8.98 1.98c-1.16-.053-1.508-.064-4.445-.064c-2.937 0-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.412 3.412 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445c0 2.937.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064c2.938 0 3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445c0-2.937-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.413 3.413 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379Zm-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986ZM8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996Zm10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89Z"
-                                            clip-rule="evenodd" />
-                                    </svg> Instagram</a>
-                            </li>
-                        </ul>
                     </li>
-                    <li>
+                    <li id="freeDownload">
                         <a href="http://www.creative-tim.com/product/gaia-bootstrap-template"
                             class="btn btn-danger btn-fill">Free Download</a>
                     </li>
@@ -204,7 +251,7 @@
                                         <div class="card card-member">
                                             <div class="content">
                                                 <div class="avatar avatar-danger">
-                                                    <img alt="..." class="img-circle"
+                                                    <img alt="..." class="img-circle" width="120" height="120"
                                                         src="assets/img/faces/face_1.jpg" />
                                                 </div>
                                                 <div class="description">
@@ -222,7 +269,7 @@
                                         <div class="card card-member">
                                             <div class="content">
                                                 <div class="avatar avatar-danger">
-                                                    <img alt="..." class="img-circle"
+                                                    <img alt="..." class="img-circle" width="120" height="120"
                                                         src="assets/img/faces/face_4.jpg" />
                                                 </div>
                                                 <div class="description">
@@ -240,7 +287,7 @@
                                         <div class="card card-member">
                                             <div class="content">
                                                 <div class="avatar avatar-danger">
-                                                    <img alt="..." class="img-circle"
+                                                    <img alt="..." class="img-circle" width="120" height="120"
                                                         src="assets/img/faces/face_3.jpg" />
                                                 </div>
                                                 <div class="description">
@@ -277,21 +324,21 @@
                 <li class="active">
                     <a href="#testimonial1" role="tab" data-toggle="tab">
                         <div class="image-clients">
-                            <img alt="..." class="img-circle" src="assets/img/faces/face_5.jpg" />
+                            <img alt="..." class="img-circle" width="90" height="90" src="assets/img/faces/face_5.jpg" />
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="#testimonial2" role="tab" data-toggle="tab">
                         <div class="image-clients">
-                            <img alt="..." class="img-circle" src="assets/img/faces/face_6.jpg" />
+                            <img alt="..." class="img-circle" width="90" height="90" src="assets/img/faces/face_6.jpg" />
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="#testimonial3" role="tab" data-toggle="tab">
                         <div class="image-clients">
-                            <img alt="..." class="img-circle" src="assets/img/faces/face_2.jpg" />
+                            <img alt="..." class="img-circle" width="90" height="90" src="assets/img/faces/face_2.jpg" />
                         </div>
                     </a>
                 </li>
@@ -506,8 +553,9 @@
 </body>
 
 <!--   core js files    -->
-<script src="assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
