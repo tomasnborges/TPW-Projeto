@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "selenium-webdriver": "^4.1.2",
+    "three": "^0.140.2"
+  }
+}
